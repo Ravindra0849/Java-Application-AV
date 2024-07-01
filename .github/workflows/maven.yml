@@ -27,9 +27,9 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Build and Push Docker Images
-        uses: ravisree900/docker-build-push@v4
+        uses: ms-smithers-excellent/docker-build-push@v4
         with: 
-          image: ravisree900/java_app@maven
+          image: ravisree900/java_app_maven
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME}}
           password: ${{ secrets.DOCKER_PASSWORD}}
