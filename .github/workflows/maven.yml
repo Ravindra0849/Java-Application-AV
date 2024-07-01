@@ -24,3 +24,5 @@ jobs:
         uses: advanced-security/maven-dependency-tree-action@v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
