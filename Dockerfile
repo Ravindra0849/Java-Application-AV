@@ -7,7 +7,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 
 WORKDIR /opt/app
 
-COPY artifact=target/spring-boot-web.jar app.jar
+COPY target/spring-boot-web.jar app.jar
 
 
 EXPOSE 8080
